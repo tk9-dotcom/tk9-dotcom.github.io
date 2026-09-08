@@ -1,16 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>LyricShards Support</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LyricShards — watchOS Music Player & Cloud Streamer</title>
+    <meta name="description" content="LyricShards is a lightweight watchOS music player connecting directly to your cloud storage and internet radio. Stream, organize, and play your music seamlessly from your wrist.">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent-color: #f0b429;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --border-color: #30363d;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .app-icon {
+            width: 96px;
+            height: 96px;
+            background: linear-gradient(135deg, #f0b429, #d97706);
+            border-radius: 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 24px rgba(240, 180, 41, 0.3);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(240, 180, 41, 0.15);
+            color: var(--accent-color);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #000;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .feature-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <h1>LyricShards Support</h1>
-  <p>Need help with MusicShards? Contact us at <a href="mailto:uc1980a@gmail.com">uc1980a@gmail.com</a>.</p>
-  <h2>FAQ</h2>
-  <p><strong>How do I connect a cloud account?</strong><br>
-  Open the Cloud tab, tap your storage provider, and follow the sign-in prompts.</p>
-  <p><strong>Does LyricShards work without my phone?</strong><br>
-  Yes — it's designed to run standalone on your Apple Watch.</p>
+    <div class="container">
+        <header>
+            <div class="app-icon">🎵</div>
+            <h1>LyricShards</h1>
+            <p class="subtitle">The ultimate watchOS music player for cloud and local libraries</p>
+            <div class="badge">Designed exclusively for Apple Watch</div>
+            <div>
+                <a href="https://apps.apple.com/us/app/lyricshards/id6792481677" class="btn">View on App Store</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>About LyricShards</h2>
+            <p>LyricShards is a streamlined, elegant music player built ground-up for watchOS. Connect directly to your cloud storage providers, stream your catalogs, and manage custom jukebox playlists effortlessly straight from your wrist without needing your iPhone nearby.</p>
+        </section>
+
+        <section>
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>☁️ Cloud Integration</h3>
+                    <p>Connect securely with Microsoft OneDrive, Nextcloud, and Koofr to stream and play your files directly.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📀 Jukebox Playlists</h3>
+                    <p>Build, organize, and switch between customized playlists and classical jukebox queues seamlessly.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>⌚ Crown Controls</h3>
+                    <p>Fine-tune volume or scroll through song selections precisely using the Digital Crown.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 LyricShards. All rights reserved. | <a href="./ad-config/support/privacy-index.html">Privacy Policy</a></p>
+        </footer>
+    </div>
 </body>
 </html>
