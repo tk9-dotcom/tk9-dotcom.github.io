@@ -3,8 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LyricShards — watchOS Music Player & Cloud Streamer</title>
-    <meta name="description" content="LyricShards is a lightweight watchOS music player connecting directly to your cloud storage and internet radio. Stream, organize, and play your music seamlessly from your wrist.">
+
+    <title>LyricShards: Standalone Apple Watch Music Player for Cloud Storage (No iPhone Needed)</title>
+    <meta name="description" content="LyricShards is a standalone Apple Watch music player. Play music from OneDrive, Dropbox, Nextcloud and Koofr straight from your wrist, with no iPhone nearby.">
+    <link rel="canonical" href="https://tk9-dotcom.github.io/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="LyricShards">
+    <meta name="theme-color" content="#0d1117">
+
+    <!-- Open Graph (Facebook, LinkedIn, iMessage, Bing previews) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LyricShards">
+    <meta property="og:title" content="LyricShards: Standalone Apple Watch Music Player">
+    <meta property="og:description" content="Play music from OneDrive, Dropbox, Nextcloud and Koofr directly on your Apple Watch, without your iPhone.">
+    <meta property="og:url" content="https://tk9-dotcom.github.io/">
+    <meta property="og:image" content="https://tk9-dotcom.github.io/lyricshards-watch.png">
+    <meta property="og:image:alt" content="LyricShards music player on Apple Watch Ultra">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LyricShards: Standalone Apple Watch Music Player">
+    <meta name="twitter:description" content="Play music from your cloud drive on Apple Watch, no iPhone needed.">
+    <meta name="twitter:image" content="https://tk9-dotcom.github.io/lyricshards-watch.png">
+
+    <!-- Apple App Store link -->
+    <meta name="apple-itunes-app" content="app-id=6792481677">
+
+    <!-- Structured data for Google and Bing -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "LyricShards",
+      "alternateName": "LyricShards Apple Watch Music Player",
+      "description": "A standalone watchOS music player that plays audio from OneDrive, Dropbox, Nextcloud and Koofr directly on Apple Watch, without an iPhone nearby.",
+      "applicationCategory": "MusicApplication",
+      "operatingSystem": "watchOS",
+      "url": "https://tk9-dotcom.github.io/",
+      "installUrl": "https://apps.apple.com/us/app/lyricshards/id6792481677",
+      "downloadUrl": "https://apps.apple.com/us/app/lyricshards/id6792481677",
+      "image": "https://tk9-dotcom.github.io/lyricshards-watch.png",
+      "featureList": [
+        "Standalone playback on Apple Watch without iPhone",
+        "OneDrive, Dropbox, Nextcloud and Koofr cloud integration",
+        "Jukebox playlists",
+        "Digital Crown volume and scroll controls"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
     <style>
         :root {
             --bg-color: #0d1117;
@@ -127,37 +179,39 @@
 <body>
     <div class="container">
         <header>
-            <div class="app-icon">🎵</div>
+            <div class="app-icon" role="img" aria-label="LyricShards app icon">🎵</div>
             <h1>LyricShards</h1>
-            <p class="subtitle">The ultimate watchOS music player for cloud and local libraries</p>
+            <p class="subtitle">The standalone Apple Watch music player for your cloud and local libraries</p>
             <div class="badge">Designed exclusively for Apple Watch</div>
             <div>
                 <a href="https://apps.apple.com/us/app/lyricshards/id6792481677" class="btn">View on App Store</a>
             </div>
         </header>
 
-        <section>
-            <h2>About LyricShards</h2>
-            <p>LyricShards is a streamlined, elegant music player built ground-up for watchOS. Connect directly to your cloud storage providers, stream your catalogs, and manage custom jukebox playlists effortlessly straight from your wrist without needing your iPhone nearby.</p>
-        </section>
+        <main>
+            <section>
+                <h2>About LyricShards</h2>
+                <p>LyricShards is a streamlined, elegant music player built ground-up for watchOS. Connect directly to your cloud storage providers, stream your catalogs, and manage custom jukebox playlists effortlessly straight from your wrist. It works as a standalone Apple Watch music player, so you can play music without your iPhone nearby, ideal for running, swimming and workouts.</p>
+            </section>
 
-        <section>
-            <h2>Key Features</h2>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <h3>☁️ Cloud Integration</h3>
-                    <p>Connect securely with Microsoft OneDrive, Nextcloud, and Koofr to stream and play your files directly.</p>
+            <section>
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>☁️ Cloud Integration</h3>
+                        <p>Connect securely with Microsoft OneDrive, Dropbox, Nextcloud and Koofr to stream and play your files directly on Apple Watch.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>📀 Jukebox Playlists</h3>
+                        <p>Build, organize, and switch between customized playlists and classical jukebox queues seamlessly.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>⌚ Crown Controls</h3>
+                        <p>Fine-tune volume or scroll through song selections precisely using the Digital Crown.</p>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <h3>📀 Jukebox Playlists</h3>
-                    <p>Build, organize, and switch between customized playlists and classical jukebox queues seamlessly.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>⌚ Crown Controls</h3>
-                    <p>Fine-tune volume or scroll through song selections precisely using the Digital Crown.</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
         <footer>
             <p>&copy; 2026 LyricShards. All rights reserved. | <a href="./ad-config/support/privacy-index.html">Privacy Policy</a></p>
